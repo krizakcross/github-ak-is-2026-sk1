@@ -1,7 +1,4 @@
-﻿Console.WriteLine("Hello, World!")
-
-string again = "a";
-
+﻿string again = "a";
 // Řídicí cyklus aplikace:
 // .ToLower() převede vstup na malá písmena, takže program pokračuje při zadání 'a' i 'A'.
 // Jakýkoliv jiný vstup program ukončí.
