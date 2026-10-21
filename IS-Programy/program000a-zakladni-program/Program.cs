@@ -31,7 +31,7 @@ while (again.ToLower() == "a")
     // Rekapitulace zadaných hodnot
     Console.WriteLine();
     Console.WriteLine("====================================");
-    Console.WriteLine($"První číslo: {first}; Druhé číslo: {last};);
+    Console.WriteLine($"První číslo: {aaa}; Druhé číslo: {bbb}");
     Console.WriteLine("====================================");
     Console.WriteLine();
 
