@@ -54,10 +54,16 @@ while (again.ToLower() == "a")
             current += step;
         }
     }
-    else
+        if (first >= last)
     {
-        Console.WriteLine("První číslo je větší než poslední. Tento program umí vypsat pouze vzestupnou řadu (od menšího k většímu).");
+        int current = first;
+        while (current >= last)
+        {
+            Console.WriteLine(current);
+            current -= step;
+        }
     }
+ 
 
     // 6. Dotaz na opakování
     Console.WriteLine();
