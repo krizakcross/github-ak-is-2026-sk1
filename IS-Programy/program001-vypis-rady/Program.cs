@@ -8,7 +8,7 @@ while (again.ToLower() == "a")
     Console.WriteLine("****************************");
     Console.WriteLine("***** Výpis řady čísel *****");
     Console.WriteLine("****************************");
-    Console.WriteLine("******* Tomáš Žižka ********");
+    Console.WriteLine("******* krizakcross ********");
     Console.WriteLine("****************************");
     Console.WriteLine();
 
