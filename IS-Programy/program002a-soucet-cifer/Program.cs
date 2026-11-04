@@ -32,6 +32,7 @@ while (again.ToLower() == "r")
     // Příprava pomocných proměnných
     int cisloBac = cislo;
     int sum = 0;    // Neutrální hodnota pro sčítání
+    int sumsoucin = 0;
     int digit;
 
     // Ošetření záporných čísel (znaménko nemá vliv na číslice)
@@ -43,6 +44,7 @@ while (again.ToLower() == "r")
     if (cislo == 0)
     {
         sum = 0;
+        sumsoucin = 0;
     }
     else
     {
@@ -59,13 +61,15 @@ while (again.ToLower() == "r")
             Console.WriteLine($"Získaná číslice: {digit}");
 
             cislo = cislo / 10;
-        }        
+
+        }
     }
+    
 
     // Výpis výsledku
-    Console.WriteLine("==============================");
+    Console.WriteLine("==========================================");
     Console.WriteLine($"Ciferný součet čísla {cisloBac} je {sum}.");
-    Console.WriteLine("==============================");
+    Console.WriteLine("==========================================");
 
     // Dotaz na opakování
     Console.WriteLine();
