@@ -15,7 +15,7 @@ while (again.ToLower() == "a")
     // Vstup první hodnoty
     Console.Write("Zadejte číslo (celé číslo): ");
     int aaa;
-    while (!int.TryParse(Console.ReadLine(), out first))
+    while (!int.TryParse(Console.ReadLine(), out aaa))
     {
         Console.Write("Nezadali jste celé číslo. Zadejte první číslo znovu: ");
     }
@@ -23,7 +23,7 @@ while (again.ToLower() == "a")
     // Vstup druhé hodnoty
     Console.Write("Zadejte další číslo (celé číslo): ");
     int bbb;
-    while (!int.TryParse(Console.ReadLine(), out last))
+    while (!int.TryParse(Console.ReadLine(), out bbb))
     {
         Console.Write("Nezadali jste celé číslo. Zadejte poslední číslo znovu: ");
     }
