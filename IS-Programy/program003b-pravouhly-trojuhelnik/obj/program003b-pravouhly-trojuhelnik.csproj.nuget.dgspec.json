@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\aaa\\github-ak-is-2026-sk1\\IS-Programy\\program003b-pravouhly-trojuhelnik\\program003b-pravouhly-trojuhelnik.csproj": {}
+    "C:\\Users\\KrizPC2023\\Desktop\\git\\github-ak-is-2026-sk1\\IS-Programy\\program003b-pravouhly-trojuhelnik\\program003b-pravouhly-trojuhelnik.csproj": {}
   },
   "projects": {
-    "C:\\aaa\\github-ak-is-2026-sk1\\IS-Programy\\program003b-pravouhly-trojuhelnik\\program003b-pravouhly-trojuhelnik.csproj": {
+    "C:\\Users\\KrizPC2023\\Desktop\\git\\github-ak-is-2026-sk1\\IS-Programy\\program003b-pravouhly-trojuhelnik\\program003b-pravouhly-trojuhelnik.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\aaa\\github-ak-is-2026-sk1\\IS-Programy\\program003b-pravouhly-trojuhelnik\\program003b-pravouhly-trojuhelnik.csproj",
+        "projectUniqueName": "C:\\Users\\KrizPC2023\\Desktop\\git\\github-ak-is-2026-sk1\\IS-Programy\\program003b-pravouhly-trojuhelnik\\program003b-pravouhly-trojuhelnik.csproj",
         "projectName": "program003b-pravouhly-trojuhelnik",
-        "projectPath": "C:\\aaa\\github-ak-is-2026-sk1\\IS-Programy\\program003b-pravouhly-trojuhelnik\\program003b-pravouhly-trojuhelnik.csproj",
-        "packagesPath": "C:\\Users\\Uzivatel\\.nuget\\packages\\",
-        "outputPath": "C:\\aaa\\github-ak-is-2026-sk1\\IS-Programy\\program003b-pravouhly-trojuhelnik\\obj\\",
+        "projectPath": "C:\\Users\\KrizPC2023\\Desktop\\git\\github-ak-is-2026-sk1\\IS-Programy\\program003b-pravouhly-trojuhelnik\\program003b-pravouhly-trojuhelnik.csproj",
+        "packagesPath": "C:\\Users\\KrizPC2023\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\KrizPC2023\\Desktop\\git\\github-ak-is-2026-sk1\\IS-Programy\\program003b-pravouhly-trojuhelnik\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Uzivatel\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\KrizPC2023\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -24,6 +24,7 @@
         },
         "frameworks": {
           "net9.0": {
+            "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {}
           }
@@ -38,10 +39,11 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.400"
       },
       "frameworks": {
         "net9.0": {
+          "framework": "net9.0",
           "targetAlias": "net9.0",
           "imports": [
             "net461",
@@ -54,12 +56,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.20, 9.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[9.0.20, 9.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[9.0.20, 9.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[9.0.20, 9.0.20]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.320/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

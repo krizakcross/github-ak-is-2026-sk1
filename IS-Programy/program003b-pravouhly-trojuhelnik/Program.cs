@@ -31,7 +31,25 @@ while (again.ToLower() == "a")
 
     // Zde budeme pokračovat konkrétním algoritmem
     // Vykreslovací algoritmus
-    
+        for (int i = 1; i <= height; i++)
+    {
+        Console.WriteLine();
+                if (i % 2 == 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+            } 
+        //  Vnitřní cyklus, který vykresluje v řádku počet teček
+        for (int j = 1; j <= i; j++)
+        {
+
+            System.Threading.Thread.Sleep(System.TimeSpan.FromMilliseconds(25)); // nastavení zpoždění
+            Console.Write("• ");
+        }
+    }
 
     // Dotaz na opakování
     Console.ResetColor();
