@@ -45,16 +45,25 @@ while (again.ToLower() == "a")
     for (int i = 1; i <= height; i++)
     {
         Console.WriteLine();
+        if (i % 2 == 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Blue;
+            }
         //  Vnitřní cyklus, který vykresluje v řádku počet teček
         for (int j = 1; j <= width; j++)
         {
-            Console.ForegroundColor = ConsoleColor.Cyan;
+
+            System.Threading.Thread.Sleep(System.TimeSpan.FromMilliseconds(25)); // nastavení zpoždění
             Console.Write("• ");
-            Console.ResetColor();
         }
     }
 
     // Dotaz na opakování
+    Console.ResetColor();
     Console.WriteLine();
     Console.WriteLine();
     Console.Write("Pro opakování programu stiskněte 'a' a potvrďte klávesou Enter: ");
