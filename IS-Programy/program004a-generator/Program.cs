@@ -36,6 +36,13 @@ while (again.ToLower() == "a")
         Console.Write("Horní mez musí být kladné číslo větší nebo rovno dolní Zadejte poslední číslo znovu: ");
     }
 
+    // Rekapitulace zadaných hodnot
+        Console.WriteLine();
+    Console.WriteLine("===================================================================");
+    Console.WriteLine($"Počet čísel: {n}; Dolní mez: {lowerBound}; Horní mez: {upperBound} ");
+    Console.WriteLine("===================================================================");
+    Console.WriteLine();
+
     //Algoritmus
     // Deklarace alokace pole v pamětí
     int[] myRandNumbs = new int[n];
@@ -44,42 +51,34 @@ while (again.ToLower() == "a")
     Random myRandNumb = new Random();
     // Random myRandNumb = new Random(50);
 
+    int positive = 0;
+    int negative = 0;
+    int zero = 0;
+
+
     // Generování náhodných čísel a jejich uložení do pole
     Console.WriteLine("Vygenerovaná pseudonáhodná čísla: ");
     for (int i = 0; i < myRandNumbs.Length; i++)
     {
-        myRandNumbs[i] = myRandNumb.Next(lowerBound, upperBound+1);
+        myRandNumbs[i] = myRandNumb.Next(lowerBound, upperBound + 1);
         Console.Write($"{myRandNumbs[i]}; ");
+
+        if (myRandNumbs[i] < 0)
+            negative++;
+        else if (myRandNumbs[i] > 0)
+            positive++;
+        else
+            zero++;
+
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // Rekapitulace zadaných hodnot
-        Console.WriteLine();
-    Console.WriteLine("===================================================================");
-    Console.WriteLine($"Počet čísel: {n}; Dolní mez: {lowerBound}; Horní mez: {upperBound} ");
-    Console.WriteLine("===================================================================");
     Console.WriteLine();
-
-    // Zde budeme pokračovat konkrétním algoritmem
+    Console.WriteLine("=================================");
+    Console.WriteLine($"Počet záporných čísel: {negative}");
+    Console.WriteLine($"Počet kladných čísel: {positive}");
+    Console.WriteLine($"Počet nul: {zero}");
+    Console.WriteLine("================================");
 
     // Dotaz na opakování
     Console.WriteLine();
