@@ -31,13 +31,49 @@ while (again.ToLower() == "a")
     // Načtení horní meze
     Console.Write("Zadejte horní mez (kladné číslo větší nebo rovno dolní meze): ");
     int upperBound;
-    while (!int.TryParse(Console.ReadLine(), out upperBound || upperBound < lowerBound ))
+    while (!int.TryParse(Console.ReadLine(), out upperBound) || upperBound < lowerBound)
     {
-        Console.Write("Nezadali jste kladné číslo. Zadejte poslední číslo znovu: ");
+        Console.Write("Horní mez musí být kladné číslo větší nebo rovno dolní Zadejte poslední číslo znovu: ");
     }
 
+    //Algoritmus
+    // Deklarace alokace pole v pamětí
+    int[] myRandNumbs = new int[n];
+
+    // Inicializace generátoru nahodných čísel
+    Random myRandNumb = new Random();
+    // Random myRandNumb = new Random(50);
+
+    // Generování náhodných čísel a jejich uložení do pole
+    Console.WriteLine("Vygenerovaná pseudonáhodná čísla: ");
+    for (int i = 0; i < myRandNumbs.Length; i++)
+    {
+        myRandNumbs[i] = myRandNumb.Next(lowerBound, upperBound+1);
+        Console.Write($"{myRandNumbs[i]}; ");
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // Rekapitulace zadaných hodnot
-    Console.WriteLine();
+        Console.WriteLine();
     Console.WriteLine("===================================================================");
     Console.WriteLine($"Počet čísel: {n}; Dolní mez: {lowerBound}; Horní mez: {upperBound} ");
     Console.WriteLine("===================================================================");
